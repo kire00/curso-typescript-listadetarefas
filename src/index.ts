@@ -62,7 +62,7 @@ function listarTarefas(filtro: string = "todas") {
 
         todoElement.appendChild(tarefaText);
         todoElement.appendChild(selectPrioridadeElement);
-        todoElement.appendChild(actionLinks); // Adicionando o contêiner de links de ação ao `todoElement`
+        todoElement.appendChild(actionLinks); 
         listElement.appendChild(todoElement);
     });
 }
