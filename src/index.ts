@@ -22,7 +22,6 @@ function listarTarefas(filtro: string = "todas") {
             tarefaText.style.textDecoration = "line-through";
         }
 
-        // Criação do contêiner para os links de ação
         let actionLinks = document.createElement("div");
         actionLinks.classList.add("action-links");
 
@@ -40,11 +39,9 @@ function listarTarefas(filtro: string = "todas") {
         });
         linkConcluirElement.textContent = item.concluida ? "Desmarcar" : "Concluir";
 
-        // Adicionando os links ao contêiner de links de ação
         actionLinks.appendChild(linkExcluirElement);
         actionLinks.appendChild(linkConcluirElement);
 
-        // Dropdown de prioridade
         let selectPrioridadeElement = document.createElement("select");
         selectPrioridadeElement.addEventListener("change", () => {
             definirPrioridade(index, selectPrioridadeElement.value);
