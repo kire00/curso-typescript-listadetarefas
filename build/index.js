@@ -91,6 +91,6 @@ function definirPrioridade(index, novaPrioridade) {
         salvarDados();
     }
     else {
-        alert("Prioridade inválida. Use alta, média ou baixa.");
+        alert("Prioridade inválida! Use alta, média ou baixa.");
     }
 }

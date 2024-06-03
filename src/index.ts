@@ -105,12 +105,12 @@ filterElement.onchange = () => {
     listarTarefas(filterElement.value);
 }
 
-function definirPrioridade(index: number, novaPrioridade: string) {
+function definirPrioridade(index: number, novaPrioridade: string)  {
     if (["alta", "média", "baixa"].includes(novaPrioridade.toLowerCase())) {
         tarefas[index].prioridade = novaPrioridade.toLowerCase();
         listarTarefas();
         salvarDados();
     } else {
-        alert("Prioridade inválida. Use alta, média ou baixa.");
+        alert("Prioridade inválida! Use alta, média ou baixa.");
     }
 }
